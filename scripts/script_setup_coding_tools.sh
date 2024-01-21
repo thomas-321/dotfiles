@@ -59,3 +59,31 @@
     else
         echo "Skipping login. Use the command gh auth login to setup the github cli gh"
     fi
+
+echo "Installing other utilities"
+sudo apt-get install tree -y                                # easy file tree in cli
+sudo apt-get install vim -y                                 # install vim
+sudo apt-get install nmap -y                                # nmap (network scanning, ports etc.)
+sudo apt install net-tools -y                               # voor ifconfig command
+sudo apt install openssh-server -y                          # to enable ssh
+sudo apt-get install tmux -y                                # tmux
+sudo apt-get install nmap -y                                # nmap
+curl -o- "https://dl-cli.pstmn.io/install/linux64.sh" | sh  # postman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
