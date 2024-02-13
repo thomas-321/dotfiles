@@ -8,5 +8,5 @@ services:
       - '81:81'
       - '443:443'
     volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
+      - /opt/nginx/data:/data
+      - /opt/nginx/letsencrypt:/etc/letsencrypt
