@@ -39,6 +39,7 @@ gh repo clone hr-repos/TINNES                   $HOME/repos/02-school/year2/seme
 gh repo clone thomas-321/PrivateWebsite         $HOME/repos/03-personal/PrivateWebsite
 gh repo clone thomas-321/CodeCollection         $HOME/repos/03-personal/CodeCollection
 gh repo clone thomas-321/My-Obsidian-vault      $HOME/repos/03-personal/My-Obsidian-vault
+gh repo clone thomas-321/second-brain           $HOME/repos/03-personal/second-brain
 gh repo clone thomas-321/dotfiles               $HOME/repos/03-personal/dotfiles
 gh repo clone thomas-321/aoc                    $HOME/repos/03-personal/aoc 
 gh repo clone thomas-321/thomas-321             $HOME/repos/03-personal/thomas-321 
