@@ -19,7 +19,10 @@
     cd ~/Programs/arduino-3.8.19
     sudo sh install.sh
     sudo usermod -a -G dialout $USER
-
+#links for board managers
+#http://arduino.esp8266.com/stable/package_esp8266com_index.json,
+#https://dl.espressif.com/dl/package_esp32_index.jsonhttps
+#https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
 
 
 # docker
