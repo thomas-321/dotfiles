@@ -1,12 +1,8 @@
-[credential "https://github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
-[credential "https://gist.github.com"]
-	helper = 
-	helper = !/usr/bin/gh auth git-credential
 [user]
-	signingkey = 7EDE536AF2124C93
-	email = 113383928+thomas-321@users.noreply.github.com
-	name = Thomas van Vliet
+        name = Thomas van Vliet
+        email = git@thomasvanvliet.net
+        signingkey = 1F4F9A04A25FEAB6
 [commit]
-	gpgsign = true
+        gpgsign = true
+[core]
+        editor = nvim
