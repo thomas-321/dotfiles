@@ -12,12 +12,12 @@ else
 fi
 
 # link the repo nvim folder to ~/.config/nvim
-rm -rf $HOME/.config/nvim
-ln -s ../nvim $HOME/.config/nvim
+rm -rf ~/.config/nvim
+ln -s  ~/repos/03-personal/dotfiles/nvim/lazy/nvim/ ~/.config/ 
 
 # link the repo tmux folder to ~/.tmux
-rm -rf $HOME/.tmux.conf
-ln -s ../tmux $HOME/.tmux.conf
+rm -rf ~/.tmux.conf
+ln -s ~/repos/03-personal/dotfiles/.tmux.conf ~/.tmux.conf
 
 # link the repo .gitconfig file to ~/.gitconfig
 rm -rf $HOME/.gitconfig

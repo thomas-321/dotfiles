@@ -1,0 +1,3 @@
+
+# ignore lazy lock (symlinked to .config/nvim)
+nvim/lazy/nvim/lazy-lock.json
