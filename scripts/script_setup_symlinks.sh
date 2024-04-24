@@ -20,13 +20,13 @@ rm -rf ~/.tmux.conf
 ln -s ~/repos/03-personal/dotfiles/.tmux.conf ~/.tmux.conf
 
 # link the repo .gitconfig file to ~/.gitconfig
-rm -rf $HOME/.gitconfig
-ln -s ../.gitconfig $HOME/.gitconfig
+rm -rf ~/.gitconfig
+ln -s ~/repos/03-personal/dotfiles/.gitconfig ~/.gitconfig
 
 # link the repo clangd config file to ~/.clangd
-rm -rf $HOME/.clangd
-mkdir -p $HOME/.clangd
-ln -s ../clangd-config/config.yaml $HOME/.clangd/config.yaml
+# rm -rf ~/.clangd
+# mkdir -p $HOME/.clangd
+# ln -s ../clangd-config/config.yaml $HOME/.clangd/config.yaml
 
 echo "Symlinks created successfully!"
 echo "To remove them run the 'script_remove_symlinks.sh' script"
