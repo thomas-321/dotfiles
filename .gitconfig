@@ -10,4 +10,5 @@
 # rewrite all https links to github remotes to ssh
 [url "git@github.com:"]
         insteadOf = https://github.com/
-
+[protocol]
+        version = 2
