@@ -15,7 +15,7 @@
     sudo apt-get install git -y             # install git
 
     sudo apt-get install ripgrep -y         # om grep te gebruiken in nvim
-    sudo apt install python3.8-venv -y      # python lsp
+    sudo apt install python3-venv -y        # python lsp
     sudo apt-get install wget -y
     sudo apt-get install gpg -y
     sudo apt install pkg-config -y          # voor asm-lsp
@@ -48,8 +48,6 @@
     # Install wl-clipboard to enable interacting with global clipboard
     sudo apt install wl-clipboard -y 
 
-    # needed for linters
-    sudo apt install python3.10-venv -y
 
 
 # Programs  
