@@ -1,3 +1,7 @@
+
+# use gpg --import-ownertrust to gpg key te importeren and 
+#                               to set trust to ULTIMATE
+
 [user]
         name = Thomas van Vliet
         email = git@thomasvanvliet.net
@@ -12,3 +16,5 @@
         insteadOf = https://github.com/
 [protocol]
         version = 2
+[log]
+	showSignature = true
