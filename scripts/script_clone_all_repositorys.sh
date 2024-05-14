@@ -22,8 +22,10 @@ git clone git@github.com:hr-repos/TINPRO045B.git               $HOME/repos/02-sc
 git clone git@github.com:hr-repos/TINPRJ0456.git               $HOME/repos/02-school/year2/semester2/TINPRJ0456
 git clone git@github.com:hr-repos/TINCOS01.git                 $HOME/repos/02-school/year2/semester3/TINCOS01 
 git clone git@github.com:hr-repos/TINPRO01-7.git               $HOME/repos/02-school/year2/semester3/TINPRO01-7
-git clone git@github.com:hr-repos/TINPRJ0478.git               $HOME/repos/02-school/year2/semester4/TINPRJ0478
 git clone git@github.com:hr-repos/TINNES.git                   $HOME/repos/02-school/year2/semester3/TINNES
+git clone git@github.com:hr-repos/TINPRO01-8.git               $HOME/repos/02-school/year2/semester4/TINPRO01-8
+git clone git@github.com:hr-repos/TINBES.git                   $HOME/repos/02-school/year2/semester4/TINBES
+git clone git@github.com:hr-repos/TINPRJ0478.git               $HOME/repos/02-school/year2/semester4/TINPRJ0478
 # personal
 git clone git@github.com:thomas-321/PrivateWebsite.git         $HOME/repos/03-personal/PrivateWebsite
 git clone git@github.com:thomas-321/CodeCollection.git         $HOME/repos/03-personal/CodeCollection
