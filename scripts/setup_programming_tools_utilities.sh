@@ -35,6 +35,7 @@
     sudo apt-get install gcc -y                                     # install gcc (c,c++ compiler)
     sudo apt-get install openjdk-17-jdk -y                          # java
     sudo apt-get install openjdk-19-jdk -y                          # java
+    sudo apt install openjdk-21-jdk -y                              # java  
     sudo apt install maven -y                                       # java build tool (dependency for neovim java lsp setup)
     sudo apt install nodejs -y                                      # nodejs
     sudo apt install npm -y                                         # nodejs package manager
