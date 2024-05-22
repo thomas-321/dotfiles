@@ -44,6 +44,10 @@ M.opts = {
 			-- { 'Add comment on the line below', 'gco' },
 			-- { 'Add comment at the end of line', 'gcA' },
 		},
+		["Platform-io"] = {
+			{ "Upload", "<leader>pr" },
+			{ "Serial Monitor", "<leader>pm" },
+    },
 		["useful"] = {
 			{ "Show all keymaps", "<F1>" },
 			{ "Format file or range", "<leader>mp" },
