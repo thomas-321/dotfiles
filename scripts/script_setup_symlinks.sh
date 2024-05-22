@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #ln -s example_fcc_file.txt fcc_link.txt
-
+echo "This script assumes the repository is in the following directory: ~/repos/03-personal/dotfiles"
 read -r -p "Running this script will remove data if a link will be created at that location. Do you wwant to continue? [y/N] " response
 if [[ "$response" =~ ^([yY][eE][sS]|[yY])$ ]]
 then
@@ -22,6 +22,10 @@ ln -s ~/repos/03-personal/dotfiles/.tmux.conf ~/.tmux.conf
 # link the repo .gitconfig file to ~/.gitconfig
 rm -rf ~/.gitconfig
 ln -s ~/repos/03-personal/dotfiles/.gitconfig ~/.gitconfig
+
+# link the bash_aliases file to ~/.bash_aliases
+rm -rf ~/.bash_aliases
+ln -s ~/repos/03-personal/dotfiles/.bash_aliases ~/.bash_aliases
 
 # link the repo clangd config file to ~/.clangd
 # rm -rf ~/.clangd
