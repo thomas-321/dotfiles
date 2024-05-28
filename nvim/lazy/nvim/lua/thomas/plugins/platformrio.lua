@@ -8,5 +8,5 @@ return {
 
 
 	vim.keymap.set("n", "<leader>pm", ':Piomon<CR>'),
-	vim.keymap.set("n", "<leader>pr", ':Piomon<CR>'),
+	vim.keymap.set("n", "<leader>pr", ':Piorun<CR>'),
 }
