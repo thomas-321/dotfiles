@@ -9,12 +9,20 @@ yay -Suy
 
 
 # Install packages
-pacman -S obsidian discord chromium firefox inkscape gimp libreoffice-fresh 
+sudo pacman -S obsidian discord chromium firefox inkscape gimp libreoffice-fresh 
+
+#install programming languages
+sudo pacman -S python3 jdk21-openjdk clang cargo maven nodejs
+curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 
+# install fonts
 
 
-
+# install turminal applications
+sudo pacman -S zoxide ripgrep fzf npm neovim tmux curl wget openssh git \
+                wl-clipbboard xclip
 
 
 
@@ -22,5 +30,4 @@ pacman -S obsidian discord chromium firefox inkscape gimp libreoffice-fresh
 
 
 # codeing related
-pacman -S neovim tmux curl wget npm nodejs python openssh git
 yay -S visual-studio-code-bin
