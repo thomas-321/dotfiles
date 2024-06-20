@@ -74,6 +74,33 @@ return { -- configure html server
             },
         })
 
+        local function run_pio_and_restart_lsp()
+            local cwd = vim.fn.getcwd()
+
+            -- Run the "pio run -t compiledb" command asynchronously
+            vim.fn.jobstart({'pio', 'run', '-t', 'compiledb'}, {
+                cwd = cwd,
+                on_exit = function(job_id, exit_code, event_type)
+                    if exit_code == 0 then
+                        -- Command finished successfully, restart LSP for the current buffer
+                        local clients = vim.lsp.get_clients()
+                        for _, client in ipairs(clients) do
+                            local buf = vim.api.nvim_get_current_buf()
+                            vim.lsp.buf_detach_client(buf, client.id)
+                            vim.lsp.buf_attach_client(buf, client.id)
+                        end
+                        print('LSP restarted successfully.')
+                    else
+                        print('Error running pio command:', exit_code)
+                    end
+                end,
+            })
+        end
+
+        vim.api.nvim_create_user_command('PioRunAndRestartLSP', run_pio_and_restart_lsp, {})
+
+        vim.api.nvim_set_keymap('n', '<leader>pr', ':PioRunAndRestartLSP<CR>', { noremap = true, silent = true })
+
         -- configure clangd server
         lspconfig["clangd"].setup({
             capabilities = capabilities,
@@ -210,4 +237,5 @@ return { -- configure html server
             },
         })
     end,
-}
+
+    }
