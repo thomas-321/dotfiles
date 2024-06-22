@@ -1,7 +1,7 @@
 # typos
 alias ezit='exit'
 alias exit]='exit'
-
+alias :q='exit'
 
 alias ..='cd ..'
 alias ...='cd ../..'
