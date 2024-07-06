@@ -30,3 +30,10 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 vim.opt.conceallevel = 1
+
+-- Set the spell languages to American English and Dutch
+vim.opt.spelllang = { 'en', 'nl' }
+
+-- Enable spell checking
+vim.opt.spell = true
+
