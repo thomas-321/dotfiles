@@ -1,0 +1,31 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server
+    volumes:
+      - /opt/minecraft/data:/data
+      - /opt/minecraft/plugins:/plugins
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: "VANILLA"
+      OPS: "tthomas_1"
+      ENABLE_WHITELIST: "TRUE"
+      ENFORCE_WHITELIST: "TRUE"
+      MOTD: "Verry good §l§cMinecraft§r §nserver"
+      SEED: 31563250179158
+      DIFFICULTY: normal
+      MAX_PLAYERS: 5
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: true
+      # ONLINE_MODE: FALSE
+      ENABLE_AUTOPAUSE: "TRUE"
+      MAX_TICK_TIME: "-1"
+      AUTOPAUSE_TIMEOUT_INIT: "300"
+      AUTOPAUSE_TIMEOUT_EST: "100"
+      VIEW_DISTANCE: 20
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+volumes:
+  minecraftdata:
+    external: true
