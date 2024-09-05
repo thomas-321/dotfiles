@@ -149,11 +149,11 @@ return { -- configure html server
             on_attach = on_attach,
         })
 
-        -- configure typescript server with plugin
-        lspconfig["tsserver"].setup({
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
+        -- -- configure typescript server with plugin
+        -- lspconfig["tsserver"].setup({
+        --     capabilities = capabilities,
+        --     on_attach = on_attach,
+        -- })
 
         -- configure css server
         lspconfig["cssls"].setup({
@@ -163,6 +163,12 @@ return { -- configure html server
 
         -- configure tailwindcss server
         lspconfig["tailwindcss"].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+
+        -- configure sqls server
+        lspconfig["sqls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
