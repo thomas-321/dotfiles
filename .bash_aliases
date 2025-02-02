@@ -20,6 +20,7 @@ alias gr='git restore '
 alias gps='git push'
 alias gpl='git pull'
 alias gfr='git reset --hard origin/main'
+alias glf="git log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(auto)%d%C(reset)' --all"
 
 alias lg='lazygit'
 alias ld='lazydocker'
