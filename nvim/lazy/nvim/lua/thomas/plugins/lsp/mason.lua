@@ -27,19 +27,19 @@ return {
         mason_lspconfig.setup({
             -- list of servers for mason to install
             ensure_installed = {
-                "html",
-                "cssls",
-                "tailwindcss",
+                -- "html",
+                -- "cssls",
+                -- "tailwindcss",
                 "lua_ls",
-                "clangd",
-                "arduino_language_server",
-                "rust_analyzer",
+                -- "clangd",
+                -- "arduino_language_server",
+                -- "rust_analyzer",
                 "bashls",
-                "docker_compose_language_service",
-                "dockerls",
-                "jsonls",
-                "ltex",
-                "java_language_server"
+                -- "docker_compose_language_service",
+                -- "dockerls",
+                -- "jsonls",
+                -- "ltex",
+                -- "java_language_server"
             },
             -- auto-install configured servers (with lspconfig)
             automatic_installation = true, -- not the same as ensure_installed
@@ -47,13 +47,13 @@ return {
 
         mason_tool_installer.setup({
             ensure_installed = {
-                "prettier", -- prettier formatter
-                "stylua", -- lua formatter
-                "isort", -- python formatter
-                "black", -- python formatter
-                "pylint", -- python linter
-                "eslint_d", -- js linter
-                "cpplint",
+                -- "prettier", -- prettier formatter
+                -- "stylua", -- lua formatter
+                -- "isort", -- python formatter
+                -- "black", -- python formatter
+                -- "pylint", -- python linter
+                -- "eslint_d", -- js linter
+                -- "cpplint",
             },
         })
     end,
