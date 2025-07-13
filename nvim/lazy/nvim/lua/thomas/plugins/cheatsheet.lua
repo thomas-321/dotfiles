@@ -26,6 +26,7 @@ M.opts = {
 			{ "Show documentation for what is under cursor", "K" },
 		},
 		["Cmp"] = {
+      {"get spell suggestions", "z="}, -- https://neovim.io/doc/user/spell.html
 			{ "Select entry", "⌃f" },
 			{ "Next result - Jump to next snippet placeholder", "⌃n" },
 			{ "Previous result - Jump to previous snippet placeholder", "⌃p" },
