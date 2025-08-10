@@ -27,6 +27,14 @@ ln -s ~/repos/03-personal/dotfiles/.gitconfig ~/.gitconfig
 rm -rf ~/.bash_aliases
 ln -s ~/repos/03-personal/dotfiles/.bash_aliases ~/.bash_aliases
 
+# link hyprland config
+rm -rf ~/.config/hypr
+ln -s ~/repos/03-personal/dotfiles/hyprland/hypr/ ~/.config/hypr/
+
+# link waybar config
+rm -rf ~/.config/waybar
+ln -s ~/repos/03-personal/dotfiles/hyprland/waybar/ ~/.config/
+
 # link the repo clangd config file to ~/.clangd
 # rm -rf ~/.clangd
 # mkdir -p $HOME/.clangd
